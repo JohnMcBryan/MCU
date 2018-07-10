@@ -1,10 +1,11 @@
-<h1>MCU Articles</h1>
+<h1><%= pluralize(@articles.size, 'Article') %></h1>
 
 <ul>
   <% @articles.each do |article| %>
     <li>
       <strong><%= article.title %></strong> (<%= article.author %>):
       <%= article.body %>
+      <%= article.created_at %>
     </li>
   <% end %>
 </ul>
