@@ -6,6 +6,7 @@
       <strong><%= article.title %></strong> (<%= article.author %>):
       <%= article.body %>
       <%= article.created_at %>
+      <%= link_to(article.title, article_path(article)) %>
     </li>
   <% end %>
 </ul>
