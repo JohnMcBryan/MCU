@@ -1,8 +1,10 @@
-<h1>Movies</h1>
+<h1>MCU Articles</h1>
 
 <ul>
-  <li>Iron Man</li>
-  <li>Superman</li>
-  <li>Spider-Man</li>
-  <li>Batman</li>
+  <% @articles.each do |article| %>
+    <li>
+      <strong><%= article.title %></strong> (<%= article.author %>):
+      <%= article.body %>
+    </li>
+  <% end %>
 </ul>
