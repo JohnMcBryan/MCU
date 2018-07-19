@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>MCU Snap</title>
-  ...
-</head>
-<body>
-
-<%= render "layouts/header" %>
-
-<%= render "layouts/sidebar" %>
-
-
-<%= yield %>
+# in _footer.html.erb
 
 <footer style="text-align: center; padding: 5px; color: #237CBE; background: #F0F0F0">
   <p>
@@ -20,5 +7,6 @@
   </p>
 </footer>
 
-</body>
-</html>
+# in application.html.erb
+
+<%= render "layouts/footer" %>
