@@ -1,12 +1,9 @@
-<h1>Feed</h1>
+<h1>Twitter Feed</h1>
 
 <ul>
-  <% @tweets.each do |article| %>
+  <% @tweets.each do |tweet| %>
     <li>
-      <strong><%= article.title %></strong> (<%= article.author %>):
-      <%= article.body %>
-      <%= article.created_at %>
-      <%= link_to(article.title, article) %>
+      <strong><%= tweet.full_text %></strong>
     </li>
   <% end %>
 </ul>

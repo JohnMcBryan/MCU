@@ -12,7 +12,7 @@ class FeedController < ApplicationController
       config.access_token_secret = "az9JlCtqX8mDeIWu3eyA2hEu0Xp0MMvsNSo2zszNQnqqS"
     end
 
-    @tweets = client.user_timeline('rubyinside', count: 20)
+    @tweets = client.user_timeline('MCU_Tweets', count: 20)
   end
 
 end
